@@ -6,3 +6,7 @@ VodkaApp.controller('IndexCtrl', function ($scope, $http) {
 		 ["en", "assets/cv/cv.en.pdf", "assets/imgs/en.png"]];
     
 });
+
+VodkaApp.controller('ErrorCtrl', function () {
+
+});

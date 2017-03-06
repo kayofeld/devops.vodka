@@ -2,7 +2,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Error 404</title>
-
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="css/angular-material.min.css">
+    
     <!-- Twitter Bootstrap style sheets -->
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,21 +13,8 @@
     <link rel="stylesheet" href="css/site.css">
     
   </head>
-  <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-	<div class="container">
-	  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	  </button>
-	  <a class="brand" href="/">Devops.Vodka</a>
-	</div>
-      </div>
-    </div>
-    
-
+  <body ng-controller="ErrorCtrl" ng-cloak>
+    <div ng-include="'html/header.html'"></div>
     <div class="container">
       <div class="row">
 	<div class="span12">
@@ -41,8 +30,21 @@
       </div>
       <style>.center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto;}</style>
       </div>
+
+    <!-- Angular.js Libraries -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-messages.min.js"></script>
     
     <!-- Twitter Bootstrap Libraries -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Angular Material Library -->
+    <script src="js/angular-material.min.js"></script>
+    
+    <!-- My Bootstrap  -->
+    <script src="js/index.js"></script>
+
   </body>
 </html>
