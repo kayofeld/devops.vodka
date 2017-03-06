@@ -1,0 +1,2 @@
+options -indexes
+ErrorDocument 404 /html/notfound.html 
